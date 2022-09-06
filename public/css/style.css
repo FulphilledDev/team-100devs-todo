@@ -1,0 +1,169 @@
+h1 {
+  color: red;
+}
+
+
+/* .urgent {
+  color: red;
+} */
+
+.fine {
+  color: blue;
+}
+
+
+/* to make it look like post-it */
+
+ul,li{
+  list-style:none;
+}
+
+li span {
+  display: block;
+  padding: 1px;
+  font-family: "Bradley Hand", ariel, 'Times New Roman';
+}
+.del{
+  font-family:'Times New Roman', Times, serif;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul li{
+  text-decoration:none;
+  color:#000;
+  /* background:#ffc; */
+  display:block;
+  height:13em;
+  width:13em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  margin: 1.2em;
+}
+
+.notUrgent{
+  background:#ffc;
+}
+
+.urgent{
+  background:rgb(248, 67, 173);
+}
+
+ul li:nth-child(even){
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+ul li:nth-child(3n){
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+ul li:nth-child(5n){
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+/* other styling moved here because cascade */
+
+.completed {
+  background: lightgrey;
+}
+li .completed{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.not {
+  text-decoration: underline;
+}
+
+.fa-check {
+  font-size: 4em;
+  color: gray;
+}
+
+/*
+
+Sign Up Form styling
+
+*/
+
+.row {
+  margin: 0 auto;
+}
+
+.signUp, 
+.logIn,
+.todosDiv
+{
+  margin: 0 auto;
+  max-width: 500px !important;
+  width: 80%;
+  color: white;
+  background: darkblue;
+  border-radius: 10px;
+  font-family: Nunito, Times, serif;
+}
+
+.todosDiv,
+.indexPage {
+  max-width: 1000px !important;
+  background: gray;
+  border-radius: 20px;
+}
+
+.signUpH1, 
+.logInH1,
+.todosH1,
+.indexH1 
+{
+  color: white;
+  font-weight: 900;
+}
+
+.todosH2 {
+  font-family: Nunito;
+  font-weight: 400;
+}
+
+.veryBig {
+  color: blue;
+}
+
+.signUpInput, 
+.logInInput,
+.todosInput,
+.calendarInput,
+.urgentOptions,
+.todoTextInput
+{
+  color: white;
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.signUpBtn, 
+.logInBtn,
+.todoSubmitBtn,
+.logOutBtn,
+.urgentOptions,
+.indexBtn
+{
+  margin: 10px 0 10px 0;
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.logOutBtn 
+{
+  background: black !important;
+}
+
+.urgentLabel {
+  background: black !important;
+}
+
